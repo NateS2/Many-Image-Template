@@ -7,7 +7,7 @@
     "react-dom": "^16.4.0",
     "react-grid-gallery": "^0.4.11",
     "react-scripts": "1.1.4",
-    "zupage": "^1.0.36"
+    "zupage": "^1.0.37"
   },
   "scripts": {
     "start": "react-scripts start",

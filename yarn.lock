@@ -7247,9 +7247,9 @@ yargs@~3.10.0:
     decamelize "^1.0.0"
     window-size "0.1.0"
 
-zupage@^1.0.36:
-  version "1.0.36"
-  resolved "https://registry.yarnpkg.com/zupage/-/zupage-1.0.36.tgz#7334890c5aaf2fd1b007f2cb6b4431a6ad36c55f"
+zupage@^1.0.37:
+  version "1.0.37"
+  resolved "https://registry.yarnpkg.com/zupage/-/zupage-1.0.37.tgz#cef4096a734feb6c2e9eea9d60b0711b93aa819e"
   dependencies:
     axios "^0.17.1"
     js-cookie "^2.2.0"
