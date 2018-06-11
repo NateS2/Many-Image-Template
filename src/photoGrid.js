@@ -5,8 +5,8 @@ const IMAGES =
 [{
         src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
         thumbnail: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
-        thumbnailWidth: 320,
-        thumbnailHeight: 174,
+        thumbnailWidth: 0,
+        thumbnailHeight: 0,
         caption: "After Rain (Jeshu John - designerspics.com)"
 },
 {
@@ -43,15 +43,24 @@ const IMAGES =
         thumbnailHeight: 212
 }]
 
-class PhotoGrid extends Component {
+var imagez = [{
+            id: "a2e186da-390f-4971-9a72-5b4ba65342f4",
+            caption: "",
+            url: "https://image.zpcdn.net/a2e186da-390f-4971-9a72-5b4ba65342f4.jpeg"
+}]
 
-  // componentDidMount() {
-  //   this.setState({ images: this.props.images })
-  // }
+class PhotoGrid extends Component {
+  state = {images: []}
+
+  componentWillReceiveProps(newProps) {
+    console.log('New Props', newProps);
+    var imageResult = newProps.images.map(imageBlock => ({ src: imageBlock.url, thumbnail: imageBlock.url, caption: imageBlock.caption }));
+    this.setState({ images: imageResult });
+  }
 
   render() {
     return (
-      <Gallery images={this.props.images} />
+      <Gallery images={this.state.images} />
     );
   }
 }
