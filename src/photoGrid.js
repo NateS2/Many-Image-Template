@@ -5,8 +5,8 @@ const IMAGES =
 [{
         src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
         thumbnail: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
-        thumbnailWidth: 0,
-        thumbnailHeight: 0,
+        thumbnailWidth: 320,
+        thumbnailHeight: 174,
         caption: "After Rain (Jeshu John - designerspics.com)"
 },
 {
@@ -19,21 +19,25 @@ const IMAGES =
 },
 
 {
-        src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-        thumbnail: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
-        thumbnailWidth: 320,
-        thumbnailHeight: 212,
-        tags: [{value: "Ocean", title: "Ocean"}, {value: "People", title: "People"}],
-        caption: "Boats (Jeshu John - designerspics.com)"
+        src: "https://images.unsplash.com/photo-1515764001020-c78a32a91265?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e402378e4dd7653f978eb38ff32fb9e8&auto=format&fit=crop&w=948&q=80",
+        thumbnail: "https://images.unsplash.com/photo-1515764001020-c78a32a91265?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e402378e4dd7653f978eb38ff32fb9e8&auto=format&fit=crop&w=948&q=80",
+        thumbnailWidth: 500,
+        thumbnailHeight: 719,
+
 },
 
 {
-        src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-        thumbnail: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
-        thumbnailWidth: 320,
-        thumbnailHeight: 212,
-        tags: [{value: "Ocean", title: "Ocean"}, {value: "People", title: "People"}],
-        caption: "Boats (Jeshu John - designerspics.com)"
+        src: "https://images.unsplash.com/photo-1507838175923-5689c9e3f527?ixlib=rb-0.3.5&s=4b7316b9854e1113842808a706e5f584&auto=format&fit=crop&w=1500&q=80",
+        thumbnail: "https://images.unsplash.com/photo-1507838175923-5689c9e3f527?ixlib=rb-0.3.5&s=4b7316b9854e1113842808a706e5f584&auto=format&fit=crop&w=1500&q=80",
+        thumbnailWidth: 7930,
+        thumbnailHeight: 5289,
+},
+
+{
+        src: "https://images.unsplash.com/photo-1495900158145-fa1e1786861b?ixlib=rb-0.3.5&s=79070bda908b13b723e1663afa969da4&auto=format&fit=crop&w=1493&q=80",
+        thumbnail: "https://images.unsplash.com/photo-1495900158145-fa1e1786861b?ixlib=rb-0.3.5&s=79070bda908b13b723e1663afa969da4&auto=format&fit=crop&w=1493&q=80",
+        thumbnailWidth: 5000,
+        thumbnailHeight: 2800,
 },
 
 {
@@ -65,7 +69,7 @@ class PhotoGrid extends Component {
 
   render() {
     return (
-      <Gallery images={this.state.images} />
+      <Gallery images={IMAGES} />
     );
   }
 }

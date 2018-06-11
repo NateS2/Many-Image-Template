@@ -14,14 +14,14 @@ class App extends Component {
     }
 
   render() {
-    const { images, title } = this.state.post;
+    const { images, body } = this.state.post;
     console.log('state', this.state);
     return (
       <div>
         <div style={{overflow: "auto"}}>
           <PhotoGrid images={images} />
         </div>
-        <h1>{title}</h1>
+        <p>{body}</p>
       </div>
     );
   }
