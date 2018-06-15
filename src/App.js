@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import PhotoGrid from './photoGrid';
 import zupage from 'zupage';
+import { Container, Header } from 'semantic-ui-react'
 
 class App extends Component {
   state = { post: { body: '', images: [] } };
@@ -14,14 +15,22 @@ class App extends Component {
     }
 
   render() {
-    const { images, body } = this.state.post;
+    const { images, body, title } = this.state.post;
     console.log('state', this.state);
     return (
-      <div>
-        <div style={{overflow: "auto"}}>
-          <PhotoGrid images={images} />
+      <div className="App">
+        <div className="backgroundContainer">
+          <Header as='h1' style={{paddingTop: '4%'}}>{title}</Header>
+          <Container style={{ paddingLeft: '1%', paddingRight: '1%', paddingTop: '3%', overflow: "auto"}}>
+            <PhotoGrid images={images} />
+          </Container>
+          <br/>
+          <br/>
+          <br/>
+          <Container text>
+            <p>{body}</p>
+          </Container>
         </div>
-        <p>{body}</p>
       </div>
     );
   }

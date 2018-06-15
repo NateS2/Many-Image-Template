@@ -45,7 +45,8 @@ const IMAGES =
         thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 212
-}]//test
+}]
+
 var imagez = [{
             id: "a2e186da-390f-4971-9a72-5b4ba65342f4",
             caption: "",
