@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import PhotoGrid from './photoGrid';
+import HeroHeader from './heroHeader';
 import zupage from 'zupage';
 import { Container, Header } from 'semantic-ui-react'
 
@@ -19,8 +20,8 @@ class App extends Component {
     console.log('state', this.state);
     return (
       <div className="App">
+        <HeroHeader />
         <div className="backgroundContainer">
-          <Header as='h1' style={{paddingTop: '4%'}}>{title}</Header>
           <Container style={{ paddingLeft: '1%', paddingRight: '1%', paddingTop: '3%', overflow: "auto"}}>
             <PhotoGrid images={images} />
           </Container>
