@@ -2,7 +2,7 @@
   text-align: center;
   background: linear-gradient(47deg, #0745f6, #06f640);
   background-size: 400% 400%;
-  animation: AnimationName infinite 20s;
+  animation: AnimationName infinite 10s;
   height: 50vh;
   /* align-items: center;
   justify-content: center; */

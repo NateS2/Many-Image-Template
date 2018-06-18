@@ -20,7 +20,7 @@ class App extends Component {
     console.log('state', this.state);
     return (
       <div className="App">
-        <HeroHeader />
+        <HeroHeader images={images} title={title}/>
         <div className="backgroundContainer">
           <Container style={{ paddingLeft: '1%', paddingRight: '1%', paddingTop: '3%', overflow: "auto"}}>
             <PhotoGrid images={images} />

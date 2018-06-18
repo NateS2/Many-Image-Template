@@ -41,6 +41,13 @@ const IMAGES =
 },
 
 {
+        src: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Cologne_-_Panoramic_Image_of_the_old_town_at_dusk.jpg",
+        thumbnail: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Cologne_-_Panoramic_Image_of_the_old_town_at_dusk.jpg",
+        thumbnailWidth: 7000,
+        thumbnailHeight: 1000,
+},
+
+{
         src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
         thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
         thumbnailWidth: 320,
