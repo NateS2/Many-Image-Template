@@ -3,7 +3,7 @@ import './App.css';
 import PhotoGrid from './photoGrid';
 import HeroHeader from './heroHeader';
 import zupage from 'zupage';
-import { Container, Header } from 'semantic-ui-react'
+import { Container, Header, Divider } from 'semantic-ui-react'
 
 class App extends Component {
   state = { post: { body: '', images: [] } };
@@ -14,6 +14,20 @@ class App extends Component {
       this.setState({ post });
       console.log('Response!', post);
     }
+
+  renderBodyText = () => {
+    const { body, title } = this.state.post;
+    if (body !== title) {
+      return (
+        <div >
+          <Divider />
+          <Container text>
+            <p>{body}</p>
+          </Container>
+        </div>
+      )
+    }
+  }
 
   render() {
     const { images, body, title } = this.state.post;
@@ -28,9 +42,7 @@ class App extends Component {
           <br/>
           <br/>
           <br/>
-          <Container text>
-            <p>{body}</p>
-          </Container>
+          {this.renderBodyText()}
         </div>
       </div>
     );
