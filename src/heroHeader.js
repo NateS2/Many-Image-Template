@@ -3,6 +3,13 @@ import LazyHero from "react-lazy-hero";
 
 const IMAGES = [
   {
+    url: "https://media3.giphy.com/media/Bc3SkXz1M9mjS/200w.webp",
+    thumbnail: "https://media3.giphy.com/media/Bc3SkXz1M9mjS/200w.webp",
+    thumbnailWidth: 320,
+    thumbnailHeight: 212
+  },
+
+  {
     url: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
     thumbnail:
       "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
@@ -51,9 +58,8 @@ const IMAGES = [
   },
 
   {
-    url: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-    thumbnail:
-      "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
+    url: "https://media3.giphy.com/media/Bc3SkXz1M9mjS/200w.webp",
+    thumbnail: "https://media3.giphy.com/media/Bc3SkXz1M9mjS/200w.webp",
     thumbnailWidth: 320,
     thumbnailHeight: 212
   }

@@ -60,9 +60,8 @@ const IMAGES = [
   },
 
   {
-    src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-    thumbnail:
-      "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
+    src: "https://media3.giphy.com/media/Bc3SkXz1M9mjS/200w.webp",
+    thumbnail: "https://media3.giphy.com/media/Bc3SkXz1M9mjS/200w.webp",
     thumbnailWidth: 320,
     thumbnailHeight: 212
   }
