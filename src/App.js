@@ -12,7 +12,7 @@ class App extends Component {
     // const post = await zupage.getPost('4122d340-7bdb-4996-8400-f3d582d84280');
     const post = await zupage.getCurrentPost();
     this.setState({ post });
-    console.log("Response!", post);
+    // console.log("Response!", post);
   }
 
   renderBodyText = () => {
@@ -31,7 +31,7 @@ class App extends Component {
 
   render() {
     const { images, body, title } = this.state.post;
-    console.log("state", this.state);
+    // console.log("state", this.state);
     return (
       <div className="App">
         <HeroHeader images={images} title={title} />
