@@ -6,7 +6,7 @@ import zupage from "zupage";
 import { Container, Header, Divider } from "semantic-ui-react";
 
 class App extends Component {
-  state = { post: { body: "", images: [] } };
+  state = { post: { body: "", images: [], page: {} } };
 
   async componentDidMount() {
     // const post = await zupage.getPost('4122d340-7bdb-4996-8400-f3d582d84280');
@@ -30,10 +30,21 @@ class App extends Component {
   };
 
   render() {
-    const { images, body, title } = this.state.post;
+    const { images, body, title, page } = this.state.post;
     // console.log("state", this.state);
+    // console.log("color palette", page.color_palette);
+    var color1 = "000000";
+    var color2 = "ffffff";
+    if (page.color_palette != null) {
+      color1 = page.color_palette[0];
+      color2 = page.color_palette[1];
+    }
     return (
-      <div className="App">
+      <div
+        className="App"
+        style={{
+          background: "linear-gradient(47deg, #" + color1 + ", #" + color2 + ")"
+        }}>
         <HeroHeader images={images} title={title} />
         <div className="backgroundContainer">
           <Container

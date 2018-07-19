@@ -72,7 +72,7 @@ class PhotoGrid extends Component {
   state = { images: [] };
 
   componentWillReceiveProps(newProps) {
-    console.log("New Props", newProps);
+    // console.log("New Props", newProps);
     var imageResult = newProps.images.map(imageBlock => ({
       src: imageBlock.url,
       thumbnail: imageBlock.url,

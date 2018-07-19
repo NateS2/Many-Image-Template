@@ -33,14 +33,16 @@ class HeroHeader extends Component {
   };
 
   changeTextSize = title => {
-    if (title.length > 50) {
-      return (
-        <h1 className="hero-text" style={{ fontSize: 20 }}>
-          {title}
-        </h1>
-      );
-    } else {
-      return <h1 className="hero-text">{title}</h1>;
+    if (title != null) {
+      if (title.length > 50) {
+        return (
+          <h1 className="hero-text" style={{ fontSize: 20 }}>
+            {title}
+          </h1>
+        );
+      } else {
+        return <h1 className="hero-text">{title}</h1>;
+      }
     }
   };
 

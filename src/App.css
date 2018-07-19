@@ -1,9 +1,9 @@
 .App {
-  text-align: center;
-  background: linear-gradient(47deg, #0745f6, #06f640);
-  background-size: 400% 400%;
-  animation: AnimationName infinite 10s;
-  height: 50vh;
+  text-align: center !important;
+  /* background: linear-gradient(47deg, #0745f6, #06f640); */
+  background-size: 400% 400% !important;
+  animation: AnimationName infinite 10s !important;
+  height: 50vh !important;
   /* align-items: center;
   justify-content: center; */
 }
